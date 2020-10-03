@@ -8,7 +8,7 @@ class Card extends React.Component {
       <div
         className="card mx-auto Fitness-Card"
         style={{
-          backgroundImage: `url(${CircleImage}), linear-gradient(to right, ${this.props.leftcolor}, ${this.props.rightcolor})`,
+          backgroundImage: `url(${CircleImage}), linear-gradient(to right, ${this.props.leftColor}, ${this.props.rightColor})`,
         }}
       >
         <div className="card-body">

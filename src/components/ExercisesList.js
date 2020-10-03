@@ -10,8 +10,8 @@ const ExercisesList = ({ exercises }) => {
             title={exercise.title}
             description={exercise.description}
             img={exercise.img}
-            leftcolor={exercise.leftColor}
-            rightcolor={exercise.rightColor}
+            leftColor={exercise.leftColor}
+            rightColor={exercise.rightColor}
           ></Card>
         );
       })}
