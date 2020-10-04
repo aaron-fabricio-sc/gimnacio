@@ -1,14 +1,11 @@
 import React from "react";
-
+import "./styles/ExerciseForm.css";
 class ExerciseForm extends React.Component {
-  handleSubmit = (e) => {
-    e.preventDefault();
-  };
   render() {
-    const { onChange, form } = this.props;
+    const { onChange, form, onSubmit } = this.props;
     return (
-      <div className="container">
-        <form onSubmit={this.handleSubmit}>
+      <div className="container form-container">
+        <form onSubmit={onSubmit}>
           <div className="form-group">
             <input
               className="form-control"
@@ -61,7 +58,7 @@ class ExerciseForm extends React.Component {
               ></input>
             </div>
           </div>
-          <button type="submit" className="btn btn-info">
+          <button type="submit" className="btn btn-info my-3">
             Submit
           </button>
         </form>
